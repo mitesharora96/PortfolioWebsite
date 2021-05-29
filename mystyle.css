@@ -1,0 +1,304 @@
+/* ---- reset ---- */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  /*font-family:open sans,sans-serif;*/
+  
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  margin:0px;
+  width: 100%;
+  height: 3300px;
+  z-index:-1;
+}
+
+#home{
+	padding-top:1px;
+	padding-top:120px;
+	
+}
+.mainIntro{
+	color:#ff7e00;
+	font-family: inconsolata,monospace;
+}
+#animation{
+	position: fixed; 
+	top: -50px;
+	transition: top 0.3s;
+	width:100%;
+	display: block;
+	background-color:#fb9902;
+	z-index:999;
+	font-family: inconsolata,monospace;
+}
+#animation li{
+	margin:0 10px;
+}
+#animation li a{
+font-size:20px;
+}
+.flip-box {
+  width: 250px;
+  height: 250px;
+  margin:50px auto;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+ border: 3px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.circular--portrait {
+  position: relative;
+  width: 100%;
+  height: 100%;  
+  border-radius: 50%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .circular--portrait {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+.flip-box-front img {
+  width: 100%;
+  height: auto;
+  margin-top:-80px;
+  }
+  
+.flip-box-back img {
+  width: 100%;
+  height: auto;
+  margin-top:-10px;
+  }
+
+.intro2 .subIntro{
+	font-family:inconsolata,monospace;
+	font-size:2.5rem;
+	color:#ff7e00;
+}
+.CV{
+	border-color:#ff7e00;
+	color:rgba(255,255,255,.5)!important;
+}
+#work{
+	padding-top:70px;
+	margin:50px auto;
+	position:relative;
+	max-width: 75%;
+	
+}
+
+.wTiltle{
+	font-size:2.5rem;
+	margin-top:20px;
+	margin-left:-65px;
+	clear:right;
+	color:#ff7e00;
+	font-family: inconsolata,monospace;
+}
+.work{
+	border:2px #ff7e00 solid;
+	margin-top:30px;
+	height:auto;
+	position:relative;
+}
+.workContent{
+	
+	margin:1.5rem 2rem;
+}
+
+.whead{
+	display:inline;
+	color:white;
+	
+}
+.wbody{
+	margin-top:1.2rem;
+	color:rgba(255,255,255,.5)!important;
+	/*font-family: open sans,sans-serif;*/
+}
+#education{
+	padding-top:70px;
+	margin:50px auto;
+	position:relative;
+	max-width: 75%;
+}
+
+.education{
+	border:2px #ff7e00 solid;
+	margin-top:30px;
+	height:auto;
+	position:relative;
+}
+.year{
+	position:absolute;
+	right:15px;
+	top:10px;
+	color:#ff7e00;
+	font-size:1rem;
+}
+#contact{
+	padding-top:70px;
+	margin:50px auto;
+	position:relative;
+	max-width: 75%;
+}
+.con1{
+	margin:50px 80px;
+	font-family: open sans,sans-serif;
+}
+form{
+	width:57%;
+	margin:20px 80px;
+}
+
+.button{
+	float:right;
+	background-color:#ff7e00;
+	color:white;
+}
+
+#footer{
+	width:100%;
+	height:auto;
+	background-color:#ff7e00;
+}
+
+#footer ul li{
+	padding-left:25px;
+	list-style-type:none;
+	margin-bottom:5px;
+}
+
+.logo{
+	width:20px;
+	height:20px;
+}
+.copy{
+	width:10px;
+	height:10px;
+}
+.copyright{
+	color:black;
+	clear:left;
+	text-align:center;
+	font-size:12px;
+}
+
+@media screen and (max-width:768px){
+	#home{
+		padding-top:70px;
+	}
+	.mainIntro{
+	font-size:2rem;
+	}
+	.intro2 .subIntro{
+		font-size:1.5rem;
+	}
+	#animation li{
+	margin-left:0;
+	}
+	#animation li a{
+	padding:8px 8px;
+	font-size:10px;
+	}
+	
+	.flip-box {
+	width: 200px;
+	height: 200px;
+	}
+	.flip-box-front img {
+	  margin-top:-60px;
+	 }
+
+	.wTiltle{
+		font-size:2rem;
+		margin-left:-35px;	
+	}
+	  
+	.whead{
+		font-size:1.5rem;	
+	}
+	.wbody{
+		font-size:1rem;
+	}
+	.workContent{	
+	margin:1rem 1rem;
+	}
+	.year{
+	right:5px;
+	top:5px;
+	font-size:12px;
+	}
+	  
+	.con1{
+	margin:30px 20px;
+	font-family: open sans,sans-serif;
+	font-size:12px;
+	}
+	.con1 h3{
+		font-size:1rem;
+	}
+	form{
+	width:85%;
+	margin:20px 20px;
+	margin-bottom:60px;
+	}
+	#education{
+	padding-top:40px;
+	}
+	#work{
+		padding-top:40px;
+	}
+	#contact{
+		padding-top:40px;
+	}
+	#particles-js {
+	  height: 2800px;
+	}
+}
+
+@media screen and (max-width:328px){
+	#home{
+		padding-top:45px;
+	}
+	.mainIntro{
+	font-size:1.5rem;
+	}
+	.intro2 .subIntro{
+		font-size:1rem;
+	}
+}
